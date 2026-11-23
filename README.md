@@ -1,113 +1,139 @@
-# Vocab App
+# Adaptive Vocab
 
-An offline, picture-based vocabulary game for elementary students on a shared
-classroom tablet. It tracks which words each child is forgetting and brings
-them back at the right time.
+**A bilingual, picture-first vocabulary game for early learners that works
+out which words each child is forgetting and brings them back at the right
+moment.**
 
-CSEN 293 Directed Research, Santa Clara University.
+<p align="center">
+  <img src="docs/screenshots/home.png" width="49%" alt="Home screen with twelve word groups">
+  <img src="docs/screenshots/find-it-spanish.png" width="49%" alt="Find it game in Spanish: la rana">
+  <img src="docs/screenshots/bubble-pop.png" width="49%" alt="Bubble Pop: picture bubbles rising">
+  <img src="docs/screenshots/flip-and-match.png" width="49%" alt="Flip and Match: memory cards">
+</p>
 
-## Layout
+## Why this exists
 
-- `content/` — the word list (`words.json`) and notes on how it was built.
-- `lib/vocab_game.dart` — the whole game as one widget (see below);
-  `lib/main.dart` runs it on its own.
-- `lib/models/` — `Word`, `Answer`, `Activity`, `NewBest`.
-- `lib/logic/` — pure functions, no storage: `stats.dart` (rolls the answer
-  log into per-word Leitner boxes) and `selector.dart` (picks the next word
-  and its wrong options).
-- `lib/data/` — `WordRepository` (loads the word list), `AnswerLog`
-  (append-only SQLite log of every answer), `Session` (connects the selector
-  to the log), `Speaker` (text-to-speech).
-- `lib/screens/` — Home (pick a group or Mix everything) → game picker →
-  Cards, Find it, Bubble Pop or Flip & Match → round done (points, best, level). Teacher screen behind a passcode. Styling is a
-  placeholder; the final UI is still to be designed.
-- `lib/widgets/` — `WordPicture` (shows the word's bundled image).
-- `lib/l10n.dart` — languages (English, Spanish) and all text children
-  read on screen. Words and facts per language are in `content/words.json`.
-- `lib/config.dart` — teacher passcode, round length, game timing.
-- `lib/theme.dart` — kid-friendly look: Fredoka font (OFL, bundled in
-  `assets/fonts/`), one bright colour per category, `BigTile`.
+Most children's vocabulary apps present words in a fixed order: every child
+sees the same list, whether they already know a word or have missed it five
+times. That works poorly in the classrooms this project is designed for:
+elementary schools with limited resources, where many children are still
+learning to read and a single tablet is shared by the whole class.
 
-## Run
+Adaptive Vocab treats every answer as information. It keeps a separate
+learning history for each child and uses it to decide what to practise next,
+how hard each question should be, and when a word is due for review. It does
+all of this on the device, with no accounts, no internet connection and no
+data leaving the classroom.
 
-For now the app targets desktop, running in Chrome:
+## How it adapts
 
-```
+Every answer is recorded: which word was asked, what the child picked, and
+how long they took. From that history the app builds a picture of each word
+for each child.
+
+**Spaced review.** Each word sits in one of five
+[Leitner](https://en.wikipedia.org/wiki/Leitner_system) boxes. A correct
+answer moves it up one box; a miss sends it back to the start. The higher the
+box, the longer the app waits before asking again: 30 seconds, 5 minutes,
+1 day, 3 days, then 7 days.
+
+**What to ask next.** The next word is chosen in this order:
+
+1. If the child has missed 2 of their last 3 answers, a word they already
+   know, so a session never turns into a run of failures.
+2. The word that is most overdue for review.
+3. A word the child has not seen yet.
+4. The word closest to being due.
+
+Words from the last three questions are skipped when possible, and no word
+is asked twice in the same round.
+
+**How hard each question is.** The wrong answers are the hidden difficulty
+dial. While a word is new or shaky, the other choices come from different
+groups (apple vs. car, shoe, bird). Once the child knows it, the choices come
+from the same group (apple vs. orange, grape, banana), starting with words
+the child has actually confused it with before. Harder questions are worth
+more points.
+
+**Mistakes are remembered precisely.** The app does not just record that a
+child got "apple" wrong. It records that they picked "orange", and uses that
+pair again later.
+
+## Games
+
+| Game | How it plays | What it tells the app |
+| --- | --- | --- |
+| **Cards** | Picture, word, spoken audio and a short fun fact | Exposure only |
+| **Find it** | Hear a word, tap its picture out of four | Right or wrong, and which wrong word |
+| **Bubble Pop** | 60 seconds; pop the right picture before it floats away. Bubbles speed up with every correct answer | Right, wrong or too slow |
+| **Flip & Match** | Find each picture's word among face-down cards | Practice; a wrong flip is a memory slip, not a vocabulary mistake |
+
+Each game draws its words from the same adaptive engine. Children can play a
+single group (Animals, Food, Body, and nine more) or **Mix everything**.
+
+## Built for the classroom
+
+- **Picture and voice first.** Every word has a picture and is read aloud,
+  so children who cannot read yet can still play.
+- **English and Spanish.** One tap switches every word, fun fact, voice and
+  label. Spanish is Latin American and taught with its article ("el gato").
+  Progress is tracked per language: knowing "cat" does not mean knowing
+  "el gato".
+- **Motivation without ranking.** Points, streaks, levels and a personal
+  best in each test game. Children compete only with their own previous score, never
+  with each other.
+- **Teacher tools.** Behind a passcode: the current child's words sorted
+  from weakest to strongest, with what they confuse each one with; a
+  demonstration mode that explains why each word and each wrong option was
+  chosen; and a points reset for a new term.
+- **Offline.** Words, pictures and fonts are bundled with the app, and all
+  progress is stored on the device.
+
+## Content
+
+143 concrete nouns in 12 groups: animals, sea, bugs, food, body, clothes,
+home, school, play, transport, nature and music. Each word has a picture and
+a one-sentence fact for children, in both languages. Groups deliberately
+include related words (eye, ear, nose) so same-group questions are genuinely
+harder, and avoid look-alike pictures (squid and octopus) that would make
+them unfair. See [`content/README.md`](content/README.md).
+
+## Built with
+
+- [Flutter](https://flutter.dev) and Dart, currently running in Chrome
+- SQLite through [sqflite](https://pub.dev/packages/sqflite), compiled to
+  WebAssembly in the browser
+- On-device text-to-speech
+- An append-only answer log, with all per-word statistics derived from it, so
+  the adaptive rules can change without losing data
+
+The adaptive logic is a set of pure functions, separate from storage and UI,
+and is covered by automated tests along with the games and storage.
+
+## Running it
+
+```sh
 flutter pub get
 flutter test
 flutter run -d chrome
 ```
 
-To use the built version in any browser (no debug tools), build and serve it
-with caching off, then open http://localhost:8081:
+See [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) for the production build,
+the project layout and how content is edited, and
+[`docs/INTEGRATION.md`](docs/INTEGRATION.md) for embedding the game in
+another Flutter app.
 
-```
-sh tool/build_web.sh
-python3 tool/serve_web.py
-```
+## What's next
 
-`build_web.sh` stamps the build time (shown bottom right of the home screen)
-and gives the app code a new URL each build, so a reload always gets the new
-code. Don't use plain `python3 -m http.server`: it sends no cache headers and
-Chrome kept an old `main.dart.js` across reloads.
+- Review of the Spanish content by a native speaker
+- A simulation study comparing the adaptive order with a fixed word order
+- Recorded voices to replace text-to-speech
 
-In the browser, SQLite runs as WebAssembly (`web/sqlite3.wasm`,
-`web/sqflite_sw.js`) and answers are saved in the browser's storage.
+## About
 
-## Players
+Built by **Ankush Rai** as a CSEN 293 Directed Research project at Santa
+Clara University, supervised by Prof. Silvia Figueira.
 
-Everything (points, bests, which words a child knows) is kept per player id.
-To try two children on one machine, put a name in the link:
-http://localhost:8081/?kid=mia and http://localhost:8081/?kid=sam. This is
-only for testing, not a login. With no name, everyone shares one player.
-
-## Games
-
-- **Cards** — learn: picture, word, voice and a fun fact. Practice only.
-- **Find it** — hear a word, tap its picture out of four. Graded.
-- **Bubble Pop** — 60 s; pop the picture bubble before it floats away. Graded.
-- **Flip & Match** (Spanish: Memorama) — 6 pairs face down (a picture and its word); flip two at a
-  time. Words are chosen adaptively, but found pairs count as practice, not
-  right/wrong: a wrong flip is usually a memory slip, not a vocabulary
-  mistake.
-
-Every game but Cards keeps a personal best per child.
-
-## Languages
-
-English and Spanish (Latin American, words with their article: "el gato").
-The app always opens in English; children switch with **English | Español**
-on the home screen. Words, facts, voice and screen text all change.
-Teacher screens stay in English.
-
-Word progress is kept **per language** (knowing "cat" is not knowing
-"el gato"), so the adaptive order starts fresh in Spanish. Points and best
-scores are one total per child.
-
-`content/spanish_review.csv` lists every Spanish word and fact, with notes
-on regional choices (e.g. papalote / cometa for kite), for a native speaker
-to check. After corrections, edit `tool/add_spanish.py` and run
-`python3 tool/add_spanish.py` to update `words.json`.
-
-## Plugging into a bigger app
-
-The whole game is one widget, `VocabGame` (`lib/vocab_game.dart`). It sets
-itself up (database, words, voice); the host only says who is playing:
-
-```dart
-VocabGame(
-  playerId: pin,                          // the host's logged-in child
-  playerName: name,                       // optional: "Hi Mia!"
-  onNewBest: (best) => saveScore(best),   // optional
-  onExit: () => Navigator.pop(context),   // optional: shows a back button
-  language: 'es',                         // optional: start in Spanish
-)
-```
-
-`onNewBest` fires when a child beats their own best in a game, with
-`playerId`, `game` (e.g. `bubble_pop`), `gameName` and `score`. The app does
-not save scores anywhere else itself; the host decides where they go.
-
-Still to agree with the host app: one combined score or one per game, and
-whether word progress should be stored online. On the web, the host also
-needs `web/sqlite3.wasm` and `web/sqflite_sw.js` from this app.
+Pictures are from [Noto Emoji](https://github.com/googlefonts/noto-emoji)
+(Apache License 2.0). The font is [Fredoka](https://fonts.google.com/specimen/Fredoka)
+(SIL Open Font License).

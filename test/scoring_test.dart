@@ -253,7 +253,7 @@ void main() {
 
     test('which games keep a best, and which are graded', () {
       expect(Activity.flashcard.hasBest, isFalse);
-      expect(Activity.memoryMatch.hasBest, isTrue);
+      expect(Activity.memoryMatch.hasBest, isFalse, reason: 'practice');
       expect(Activity.memoryMatch.graded, isFalse, reason: 'flips are memory');
       expect(Activity.pictureQuiz.graded && Activity.bubblePop.graded, isTrue);
     });

@@ -280,9 +280,7 @@ void main() {
       await tester.pump();
     }
 
-    testWidgets('6 pairs: a picture and its word stay open and score', (
-      tester,
-    ) async {
+    testWidgets('6 pairs: a picture and its word stay open', (tester) async {
       await openGame(tester, 'Flip & Match');
       final ids = board();
       expect(ids, hasLength(6));
@@ -291,7 +289,6 @@ void main() {
       await flip(tester, 'pic-${ids[0]}');
       await flip(tester, 'word-${ids[0]}');
       await tester.pumpAndSettle();
-      expect(find.text('10'), findsOneWidget, reason: 'points for the pair');
       final rows = await log.all(learnerId: mia.id);
       expect(rows.single.activityType, 'memory_match');
       expect(session.stats[ids[0]]!.graded, 0, reason: 'practice, not a test');
@@ -344,7 +341,7 @@ void main() {
       expect(await log.all(learnerId: mia.id), hasLength(1));
     });
 
-    testWidgets('finding every pair ends the round with a best', (
+    testWidgets('finding every pair ends the round; practice, no best', (
       tester,
     ) async {
       await openGame(tester, 'Flip & Match');
@@ -356,13 +353,14 @@ void main() {
       await tester.pump(const Duration(seconds: 1));
       await tester.pumpAndSettle();
       expect(find.text('Great job!'), findsOneWidget);
-      expect(find.text('New best!'), findsOneWidget);
-      // 6 pairs with streak bonuses (0,5,10,15,15,15) + 20 for finishing.
-      expect(session.bestPoints(Activity.memoryMatch), 60 + 60 + 20);
+      expect(find.text('+20 points'), findsOneWidget, reason: 'finishing');
+      expect(find.text('New best!'), findsNothing);
+      expect(session.bestPoints(Activity.memoryMatch), 0);
+      expect(session.totalPoints, pointsRoundDone);
 
       await tester.tap(find.text('Home'));
       await tester.pumpAndSettle();
-      expect(find.text('Best Flip & Match: 140'), findsOneWidget);
+      expect(find.textContaining('Best Flip & Match'), findsNothing);
     });
   });
 

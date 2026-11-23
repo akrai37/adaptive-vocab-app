@@ -17,9 +17,6 @@ const fastAnswer = Duration(seconds: 3);
 /// Per card viewed in Cards (learning counts too).
 const pointsPerCard = 2;
 
-/// Per pair found in Memory.
-const pointsPerPair = 10;
-
 /// For finishing any round.
 const pointsRoundDone = 20;
 

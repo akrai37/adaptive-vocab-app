@@ -9,14 +9,14 @@ import '../logic/scoring.dart';
 import '../models/activity.dart';
 import '../models/word.dart';
 import '../theme.dart';
-import '../widgets/score.dart';
 import '../widgets/word_picture.dart';
 import 'round_done_screen.dart';
 
-/// Memory game: cards lie face down, half pictures and half words. Flip two;
-/// a picture and its word stay open. Words come from the adaptive engine.
-/// A found pair is logged as practice (like Cards): a wrong flip is usually
-/// a memory slip, not a vocabulary mistake, so it never counts against a word.
+/// Flip & Match: cards lie face down, half pictures and half words. Flip
+/// two; a picture and its word stay open. Words come from the adaptive
+/// engine. Like Cards this is practice: a found pair is logged as exposure,
+/// a wrong flip is a memory slip and never counts against a word, and the
+/// round scores a fixed amount with no personal best.
 class MemoryMatchScreen extends StatefulWidget {
   final String category;
   final Session session;
@@ -59,7 +59,7 @@ class _MemoryMatchScreenState extends State<MemoryMatchScreen> {
   /// Word ids whose pair was found.
   final _found = <String>{};
   bool _busy = false, _over = false;
-  int _points = 0, _streak = 0, _bestStreak = 0, _misses = 0;
+  int _misses = 0;
 
   Future<void> _flip(int i) async {
     final card = _cards[i];
@@ -73,11 +73,8 @@ class _MemoryMatchScreenState extends State<MemoryMatchScreen> {
 
     final a = _cards[_open[0]], b = _cards[_open[1]];
     if (a.word.id == b.word.id && a.picture != b.picture) {
-      _streak++;
-      _bestStreak = max(_bestStreak, _streak);
       setState(() {
         _found.add(a.word.id);
-        _points += pointsPerPair + streakBonus(_streak);
         _open.clear();
       });
       // Say the word for the match, unless the card just turned was the
@@ -91,7 +88,6 @@ class _MemoryMatchScreenState extends State<MemoryMatchScreen> {
       );
       if (_found.length == _words.length) await _finish();
     } else {
-      _streak = 0;
       _misses++;
       _busy = true;
       await Future.delayed(const Duration(milliseconds: 1100));
@@ -104,14 +100,13 @@ class _MemoryMatchScreenState extends State<MemoryMatchScreen> {
   Future<void> _finish() async {
     _over = true;
     await Future.delayed(const Duration(milliseconds: 700));
-    _points += pointsRoundDone;
     final outcome = await widget.session.finishRound(
       activity: Activity.memoryMatch,
       category: widget.category,
-      points: _points,
+      points: pointsRoundDone,
       correct: _words.length,
       questions: _words.length + _misses,
-      bestStreak: _bestStreak,
+      bestStreak: 0,
     );
     if (!mounted) return;
     Navigator.pushReplacement(
@@ -121,7 +116,6 @@ class _MemoryMatchScreenState extends State<MemoryMatchScreen> {
           texts: widget.session.texts,
           stars: memoryStars(_misses, pairs: _words.length),
           outcome: outcome,
-          bestStreak: _bestStreak,
           playAgain: () => MemoryMatchScreen(
             category: widget.category,
             session: widget.session,
@@ -144,7 +138,6 @@ class _MemoryMatchScreenState extends State<MemoryMatchScreen> {
           color: color,
           backgroundColor: color.withValues(alpha: 0.2),
         ),
-        actions: [ScorePill(_points)],
       ),
       body: LayoutBuilder(
         builder: (_, box) {

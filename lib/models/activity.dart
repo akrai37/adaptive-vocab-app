@@ -3,7 +3,7 @@ enum Activity {
   flashcard('flashcard', 'Cards', graded: false),
   pictureQuiz('picture_quiz', 'Find it'),
   bubblePop('bubble_pop', 'Bubble Pop'),
-  memoryMatch('memory_match', 'Flip & Match', graded: false, hasBest: true),
+  memoryMatch('memory_match', 'Flip & Match', graded: false),
   spelling('spelling', 'Spelling');
 
   final String key;
@@ -15,9 +15,9 @@ enum Activity {
   /// exposure: they count as "seen" but never move a word up or down.
   final bool graded;
 
-  /// Whether rounds keep a personal best. Every game but Cards, whose rounds
-  /// always score the same. Memory has a best but is not graded: a wrong
-  /// flip is usually a memory slip, not a vocabulary mistake.
+  /// Whether rounds keep a personal best: only games where every answer
+  /// tests the word. Cards and Flip & Match are practice, so their rounds
+  /// score a fixed amount and keep no best.
   final bool hasBest;
 
   const Activity(this.key, this.label, {this.graded = true, bool? hasBest})
