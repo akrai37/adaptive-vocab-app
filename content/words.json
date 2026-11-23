@@ -1,0 +1,2647 @@
+{
+  "version": 2,
+  "categories": [
+    "animals",
+    "sea",
+    "bugs",
+    "food",
+    "body",
+    "clothes",
+    "home",
+    "school",
+    "play",
+    "transport",
+    "nature",
+    "music"
+  ],
+  "languages": [
+    "en",
+    "es"
+  ],
+  "categoryNames": {
+    "animals": {
+      "en": "Animals",
+      "es": "Animales"
+    },
+    "sea": {
+      "en": "Sea",
+      "es": "Mar"
+    },
+    "bugs": {
+      "en": "Bugs",
+      "es": "Bichos"
+    },
+    "food": {
+      "en": "Food",
+      "es": "Comida"
+    },
+    "body": {
+      "en": "Body",
+      "es": "Cuerpo"
+    },
+    "clothes": {
+      "en": "Clothes",
+      "es": "Ropa"
+    },
+    "home": {
+      "en": "Home",
+      "es": "Casa"
+    },
+    "school": {
+      "en": "School",
+      "es": "Escuela"
+    },
+    "play": {
+      "en": "Play",
+      "es": "Juegos"
+    },
+    "transport": {
+      "en": "Transport",
+      "es": "Transporte"
+    },
+    "nature": {
+      "en": "Nature",
+      "es": "Naturaleza"
+    },
+    "music": {
+      "en": "Music",
+      "es": "Música"
+    }
+  },
+  "words": [
+    {
+      "id": "cat",
+      "category": "animals",
+      "emoji": "🐈",
+      "image": "images/cat.png",
+      "text": {
+        "en": "cat",
+        "es": "el gato"
+      },
+      "fact": {
+        "en": "A cat says meow.",
+        "es": "El gato dice miau."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "dog",
+      "category": "animals",
+      "emoji": "🐕",
+      "image": "images/dog.png",
+      "text": {
+        "en": "dog",
+        "es": "el perro"
+      },
+      "fact": {
+        "en": "A dog wags its tail when it is happy.",
+        "es": "El perro mueve la cola cuando está feliz."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cow",
+      "category": "animals",
+      "emoji": "🐄",
+      "image": "images/cow.png",
+      "text": {
+        "en": "cow",
+        "es": "la vaca"
+      },
+      "fact": {
+        "en": "A cow gives us milk.",
+        "es": "La vaca nos da leche."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "pig",
+      "category": "animals",
+      "emoji": "🐖",
+      "image": "images/pig.png",
+      "text": {
+        "en": "pig",
+        "es": "el cerdo"
+      },
+      "fact": {
+        "en": "A pig has a round pink nose.",
+        "es": "El cerdo tiene la nariz redonda y rosada."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "duck",
+      "category": "animals",
+      "emoji": "🦆",
+      "image": "images/duck.png",
+      "text": {
+        "en": "duck",
+        "es": "el pato"
+      },
+      "fact": {
+        "en": "A duck can swim and fly.",
+        "es": "El pato puede nadar y volar."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "hen",
+      "category": "animals",
+      "emoji": "🐔",
+      "image": "images/hen.png",
+      "text": {
+        "en": "hen",
+        "es": "la gallina"
+      },
+      "fact": {
+        "en": "A hen lays eggs.",
+        "es": "La gallina pone huevos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "fish",
+      "category": "animals",
+      "emoji": "🐟",
+      "image": "images/fish.png",
+      "text": {
+        "en": "fish",
+        "es": "el pez"
+      },
+      "fact": {
+        "en": "A fish lives in water.",
+        "es": "El pez vive en el agua."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bird",
+      "category": "animals",
+      "emoji": "🐦",
+      "image": "images/bird.png",
+      "text": {
+        "en": "bird",
+        "es": "el pájaro"
+      },
+      "fact": {
+        "en": "A bird has feathers and wings.",
+        "es": "El pájaro tiene plumas y alas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "horse",
+      "category": "animals",
+      "emoji": "🐎",
+      "image": "images/horse.png",
+      "text": {
+        "en": "horse",
+        "es": "el caballo"
+      },
+      "fact": {
+        "en": "A horse can run very fast.",
+        "es": "El caballo corre muy rápido."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "sheep",
+      "category": "animals",
+      "emoji": "🐑",
+      "image": "images/sheep.png",
+      "text": {
+        "en": "sheep",
+        "es": "la oveja"
+      },
+      "fact": {
+        "en": "Sheep give us wool.",
+        "es": "Las ovejas nos dan lana."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "goat",
+      "category": "animals",
+      "emoji": "🐐",
+      "image": "images/goat.png",
+      "text": {
+        "en": "goat",
+        "es": "la cabra"
+      },
+      "fact": {
+        "en": "A goat likes to climb.",
+        "es": "A la cabra le gusta trepar."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "rabbit",
+      "category": "animals",
+      "emoji": "🐇",
+      "image": "images/rabbit.png",
+      "text": {
+        "en": "rabbit",
+        "es": "el conejo"
+      },
+      "fact": {
+        "en": "A rabbit has long ears.",
+        "es": "El conejo tiene orejas largas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "lion",
+      "category": "animals",
+      "emoji": "🦁",
+      "image": "images/lion.png",
+      "text": {
+        "en": "lion",
+        "es": "el león"
+      },
+      "fact": {
+        "en": "A lion has a big mane.",
+        "es": "El león tiene una gran melena."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "monkey",
+      "category": "animals",
+      "emoji": "🐒",
+      "image": "images/monkey.png",
+      "text": {
+        "en": "monkey",
+        "es": "el mono"
+      },
+      "fact": {
+        "en": "A monkey loves to climb trees.",
+        "es": "Al mono le encanta trepar árboles."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "elephant",
+      "category": "animals",
+      "emoji": "🐘",
+      "image": "images/elephant.png",
+      "text": {
+        "en": "elephant",
+        "es": "el elefante"
+      },
+      "fact": {
+        "en": "An elephant has a long trunk.",
+        "es": "El elefante tiene una trompa larga."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "frog",
+      "category": "animals",
+      "emoji": "🐸",
+      "image": "images/frog.png",
+      "text": {
+        "en": "frog",
+        "es": "la rana"
+      },
+      "fact": {
+        "en": "A frog can jump far.",
+        "es": "La rana salta muy lejos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "whale",
+      "category": "sea",
+      "emoji": "🐋",
+      "image": "images/whale.png",
+      "text": {
+        "en": "whale",
+        "es": "la ballena"
+      },
+      "fact": {
+        "en": "A whale is the biggest animal in the sea.",
+        "es": "La ballena es el animal más grande del mar."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "dolphin",
+      "category": "sea",
+      "emoji": "🐬",
+      "image": "images/dolphin.png",
+      "text": {
+        "en": "dolphin",
+        "es": "el delfín"
+      },
+      "fact": {
+        "en": "A dolphin is very smart.",
+        "es": "El delfín es muy inteligente."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "shark",
+      "category": "sea",
+      "emoji": "🦈",
+      "image": "images/shark.png",
+      "text": {
+        "en": "shark",
+        "es": "el tiburón"
+      },
+      "fact": {
+        "en": "A shark has many sharp teeth.",
+        "es": "El tiburón tiene muchos dientes filosos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "octopus",
+      "category": "sea",
+      "emoji": "🐙",
+      "image": "images/octopus.png",
+      "text": {
+        "en": "octopus",
+        "es": "el pulpo"
+      },
+      "fact": {
+        "en": "An octopus has eight arms.",
+        "es": "El pulpo tiene ocho brazos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "crab",
+      "category": "sea",
+      "emoji": "🦀",
+      "image": "images/crab.png",
+      "text": {
+        "en": "crab",
+        "es": "el cangrejo"
+      },
+      "fact": {
+        "en": "A crab walks sideways.",
+        "es": "El cangrejo camina de lado."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "shrimp",
+      "category": "sea",
+      "emoji": "🦐",
+      "image": "images/shrimp.png",
+      "text": {
+        "en": "shrimp",
+        "es": "el camarón"
+      },
+      "fact": {
+        "en": "A shrimp is small and lives in the sea.",
+        "es": "El camarón es pequeño y vive en el mar."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "turtle",
+      "category": "sea",
+      "emoji": "🐢",
+      "image": "images/turtle.png",
+      "text": {
+        "en": "turtle",
+        "es": "la tortuga"
+      },
+      "fact": {
+        "en": "A turtle carries its shell on its back.",
+        "es": "La tortuga lleva su caparazón en la espalda."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "seal",
+      "category": "sea",
+      "emoji": "🦭",
+      "image": "images/seal.png",
+      "text": {
+        "en": "seal",
+        "es": "la foca"
+      },
+      "fact": {
+        "en": "A seal can swim and rest on land.",
+        "es": "La foca nada y descansa en la tierra."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "shell",
+      "category": "sea",
+      "emoji": "🐚",
+      "image": "images/shell.png",
+      "text": {
+        "en": "shell",
+        "es": "la concha"
+      },
+      "fact": {
+        "en": "You can find shells on the beach.",
+        "es": "Puedes encontrar conchas en la playa."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "lobster",
+      "category": "sea",
+      "emoji": "🦞",
+      "image": "images/lobster.png",
+      "text": {
+        "en": "lobster",
+        "es": "la langosta"
+      },
+      "fact": {
+        "en": "A lobster has two big claws.",
+        "es": "La langosta tiene dos pinzas grandes."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bee",
+      "category": "bugs",
+      "emoji": "🐝",
+      "image": "images/bee.png",
+      "text": {
+        "en": "bee",
+        "es": "la abeja"
+      },
+      "fact": {
+        "en": "A bee makes honey.",
+        "es": "La abeja hace miel."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "ant",
+      "category": "bugs",
+      "emoji": "🐜",
+      "image": "images/ant.png",
+      "text": {
+        "en": "ant",
+        "es": "la hormiga"
+      },
+      "fact": {
+        "en": "Ants work together.",
+        "es": "Las hormigas trabajan juntas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "butterfly",
+      "category": "bugs",
+      "emoji": "🦋",
+      "image": "images/butterfly.png",
+      "text": {
+        "en": "butterfly",
+        "es": "la mariposa"
+      },
+      "fact": {
+        "en": "A butterfly has colorful wings.",
+        "es": "La mariposa tiene alas de colores."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "ladybug",
+      "category": "bugs",
+      "emoji": "🐞",
+      "image": "images/ladybug.png",
+      "text": {
+        "en": "ladybug",
+        "es": "la catarina"
+      },
+      "fact": {
+        "en": "A ladybug is red with black spots.",
+        "es": "La catarina es roja con puntos negros."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "spider",
+      "category": "bugs",
+      "emoji": "🕷️",
+      "image": "images/spider.png",
+      "text": {
+        "en": "spider",
+        "es": "la araña"
+      },
+      "fact": {
+        "en": "A spider spins a web.",
+        "es": "La araña teje una telaraña."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "snail",
+      "category": "bugs",
+      "emoji": "🐌",
+      "image": "images/snail.png",
+      "text": {
+        "en": "snail",
+        "es": "el caracol"
+      },
+      "fact": {
+        "en": "A snail moves very slowly.",
+        "es": "El caracol se mueve muy despacio."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "worm",
+      "category": "bugs",
+      "emoji": "🪱",
+      "image": "images/worm.png",
+      "text": {
+        "en": "worm",
+        "es": "el gusano"
+      },
+      "fact": {
+        "en": "A worm lives in the soil.",
+        "es": "El gusano vive en la tierra."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "beetle",
+      "category": "bugs",
+      "emoji": "🪲",
+      "image": "images/beetle.png",
+      "text": {
+        "en": "beetle",
+        "es": "el escarabajo"
+      },
+      "fact": {
+        "en": "A beetle has a hard shell.",
+        "es": "El escarabajo tiene un caparazón duro."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cricket",
+      "category": "bugs",
+      "emoji": "🦗",
+      "image": "images/cricket.png",
+      "text": {
+        "en": "cricket",
+        "es": "el grillo"
+      },
+      "fact": {
+        "en": "A cricket chirps at night.",
+        "es": "El grillo canta de noche."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "fly",
+      "category": "bugs",
+      "emoji": "🪰",
+      "image": "images/fly.png",
+      "text": {
+        "en": "fly",
+        "es": "la mosca"
+      },
+      "fact": {
+        "en": "A fly buzzes around.",
+        "es": "La mosca zumba por todos lados."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "apple",
+      "category": "food",
+      "emoji": "🍎",
+      "image": "images/apple.png",
+      "text": {
+        "en": "apple",
+        "es": "la manzana"
+      },
+      "fact": {
+        "en": "An apple grows on a tree.",
+        "es": "La manzana crece en un árbol."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "banana",
+      "category": "food",
+      "emoji": "🍌",
+      "image": "images/banana.png",
+      "text": {
+        "en": "banana",
+        "es": "el plátano"
+      },
+      "fact": {
+        "en": "A banana is long and yellow.",
+        "es": "El plátano es largo y amarillo."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "orange",
+      "category": "food",
+      "emoji": "🍊",
+      "image": "images/orange.png",
+      "text": {
+        "en": "orange",
+        "es": "la naranja"
+      },
+      "fact": {
+        "en": "An orange is juicy.",
+        "es": "La naranja es muy jugosa."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "grape",
+      "category": "food",
+      "emoji": "🍇",
+      "image": "images/grape.png",
+      "text": {
+        "en": "grape",
+        "es": "la uva"
+      },
+      "fact": {
+        "en": "Grapes grow in bunches.",
+        "es": "Las uvas crecen en racimos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "egg",
+      "category": "food",
+      "emoji": "🥚",
+      "image": "images/egg.png",
+      "text": {
+        "en": "egg",
+        "es": "el huevo"
+      },
+      "fact": {
+        "en": "An egg can be boiled or fried.",
+        "es": "El huevo se puede hervir o freír."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bread",
+      "category": "food",
+      "emoji": "🍞",
+      "image": "images/bread.png",
+      "text": {
+        "en": "bread",
+        "es": "el pan"
+      },
+      "fact": {
+        "en": "Bread is made from wheat.",
+        "es": "El pan se hace con trigo."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "milk",
+      "category": "food",
+      "emoji": "🥛",
+      "image": "images/milk.png",
+      "text": {
+        "en": "milk",
+        "es": "la leche"
+      },
+      "fact": {
+        "en": "Milk helps make strong bones.",
+        "es": "La leche ayuda a tener huesos fuertes."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "carrot",
+      "category": "food",
+      "emoji": "🥕",
+      "image": "images/carrot.png",
+      "text": {
+        "en": "carrot",
+        "es": "la zanahoria"
+      },
+      "fact": {
+        "en": "A carrot grows under the ground.",
+        "es": "La zanahoria crece bajo la tierra."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "pear",
+      "category": "food",
+      "emoji": "🍐",
+      "image": "images/pear.png",
+      "text": {
+        "en": "pear",
+        "es": "la pera"
+      },
+      "fact": {
+        "en": "A pear is sweet and juicy.",
+        "es": "La pera es dulce y jugosa."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "lemon",
+      "category": "food",
+      "emoji": "🍋",
+      "image": "images/lemon.png",
+      "text": {
+        "en": "lemon",
+        "es": "el limón"
+      },
+      "fact": {
+        "en": "A lemon tastes sour.",
+        "es": "El limón sabe ácido."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cherry",
+      "category": "food",
+      "emoji": "🍒",
+      "image": "images/cherry.png",
+      "text": {
+        "en": "cherry",
+        "es": "la cereza"
+      },
+      "fact": {
+        "en": "A cherry is small and red.",
+        "es": "La cereza es pequeña y roja."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "strawberry",
+      "category": "food",
+      "emoji": "🍓",
+      "image": "images/strawberry.png",
+      "text": {
+        "en": "strawberry",
+        "es": "la fresa"
+      },
+      "fact": {
+        "en": "A strawberry has tiny seeds on the outside.",
+        "es": "La fresa tiene semillitas por fuera."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "corn",
+      "category": "food",
+      "emoji": "🌽",
+      "image": "images/corn.png",
+      "text": {
+        "en": "corn",
+        "es": "el maíz"
+      },
+      "fact": {
+        "en": "Corn is yellow and grows tall.",
+        "es": "El maíz es amarillo y crece alto."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cheese",
+      "category": "food",
+      "emoji": "🧀",
+      "image": "images/cheese.png",
+      "text": {
+        "en": "cheese",
+        "es": "el queso"
+      },
+      "fact": {
+        "en": "Cheese is made from milk.",
+        "es": "El queso se hace con leche."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cake",
+      "category": "food",
+      "emoji": "🍰",
+      "image": "images/cake.png",
+      "text": {
+        "en": "cake",
+        "es": "el pastel"
+      },
+      "fact": {
+        "en": "We eat cake on birthdays.",
+        "es": "Comemos pastel en los cumpleaños."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "pizza",
+      "category": "food",
+      "emoji": "🍕",
+      "image": "images/pizza.png",
+      "text": {
+        "en": "pizza",
+        "es": "la pizza"
+      },
+      "fact": {
+        "en": "A pizza is round and cut into slices.",
+        "es": "La pizza es redonda y se corta en rebanadas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "eye",
+      "category": "body",
+      "emoji": "👁️",
+      "image": "images/eye.png",
+      "text": {
+        "en": "eye",
+        "es": "el ojo"
+      },
+      "fact": {
+        "en": "You see with your eyes.",
+        "es": "Ves con los ojos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "ear",
+      "category": "body",
+      "emoji": "👂",
+      "image": "images/ear.png",
+      "text": {
+        "en": "ear",
+        "es": "la oreja"
+      },
+      "fact": {
+        "en": "You hear with your ears.",
+        "es": "Oyes con las orejas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "nose",
+      "category": "body",
+      "emoji": "👃",
+      "image": "images/nose.png",
+      "text": {
+        "en": "nose",
+        "es": "la nariz"
+      },
+      "fact": {
+        "en": "You smell with your nose.",
+        "es": "Hueles con la nariz."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "mouth",
+      "category": "body",
+      "emoji": "👄",
+      "image": "images/mouth.png",
+      "text": {
+        "en": "mouth",
+        "es": "la boca"
+      },
+      "fact": {
+        "en": "You eat and talk with your mouth.",
+        "es": "Comes y hablas con la boca."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "hand",
+      "category": "body",
+      "emoji": "✋",
+      "image": "images/hand.png",
+      "text": {
+        "en": "hand",
+        "es": "la mano"
+      },
+      "fact": {
+        "en": "You have five fingers on each hand.",
+        "es": "Tienes cinco dedos en cada mano."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "foot",
+      "category": "body",
+      "emoji": "🦶",
+      "image": "images/foot.png",
+      "text": {
+        "en": "foot",
+        "es": "el pie"
+      },
+      "fact": {
+        "en": "You walk on your feet.",
+        "es": "Caminas con los pies."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "leg",
+      "category": "body",
+      "emoji": "🦵",
+      "image": "images/leg.png",
+      "text": {
+        "en": "leg",
+        "es": "la pierna"
+      },
+      "fact": {
+        "en": "Your legs help you run.",
+        "es": "Las piernas te ayudan a correr."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "tooth",
+      "category": "body",
+      "emoji": "🦷",
+      "image": "images/tooth.png",
+      "text": {
+        "en": "tooth",
+        "es": "el diente"
+      },
+      "fact": {
+        "en": "Brush your teeth every day.",
+        "es": "Lávate los dientes todos los días."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "arm",
+      "category": "body",
+      "emoji": "💪",
+      "image": "images/arm.png",
+      "text": {
+        "en": "arm",
+        "es": "el brazo"
+      },
+      "fact": {
+        "en": "You hug with your arms.",
+        "es": "Abrazas con los brazos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "tongue",
+      "category": "body",
+      "emoji": "👅",
+      "image": "images/tongue.png",
+      "text": {
+        "en": "tongue",
+        "es": "la lengua"
+      },
+      "fact": {
+        "en": "You taste with your tongue.",
+        "es": "Saboreas con la lengua."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bone",
+      "category": "body",
+      "emoji": "🦴",
+      "image": "images/bone.png",
+      "text": {
+        "en": "bone",
+        "es": "el hueso"
+      },
+      "fact": {
+        "en": "Bones keep your body strong.",
+        "es": "Los huesos hacen fuerte tu cuerpo."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "brain",
+      "category": "body",
+      "emoji": "🧠",
+      "image": "images/brain.png",
+      "text": {
+        "en": "brain",
+        "es": "el cerebro"
+      },
+      "fact": {
+        "en": "You think with your brain.",
+        "es": "Piensas con el cerebro."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "hat",
+      "category": "clothes",
+      "emoji": "👒",
+      "image": "images/hat.png",
+      "text": {
+        "en": "hat",
+        "es": "el sombrero"
+      },
+      "fact": {
+        "en": "A hat keeps the sun off your head.",
+        "es": "El sombrero te protege del sol."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "shoe",
+      "category": "clothes",
+      "emoji": "👟",
+      "image": "images/shoe.png",
+      "text": {
+        "en": "shoe",
+        "es": "el zapato"
+      },
+      "fact": {
+        "en": "Shoes protect your feet.",
+        "es": "Los zapatos protegen tus pies."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "shirt",
+      "category": "clothes",
+      "emoji": "👕",
+      "image": "images/shirt.png",
+      "text": {
+        "en": "shirt",
+        "es": "la camisa"
+      },
+      "fact": {
+        "en": "A shirt has sleeves.",
+        "es": "La camisa tiene mangas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "dress",
+      "category": "clothes",
+      "emoji": "👗",
+      "image": "images/dress.png",
+      "text": {
+        "en": "dress",
+        "es": "el vestido"
+      },
+      "fact": {
+        "en": "A dress is one piece of clothing.",
+        "es": "El vestido es una sola pieza de ropa."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "sock",
+      "category": "clothes",
+      "emoji": "🧦",
+      "image": "images/sock.png",
+      "text": {
+        "en": "sock",
+        "es": "el calcetín"
+      },
+      "fact": {
+        "en": "You wear socks inside your shoes.",
+        "es": "Usas calcetines dentro de los zapatos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "coat",
+      "category": "clothes",
+      "emoji": "🧥",
+      "image": "images/coat.png",
+      "text": {
+        "en": "coat",
+        "es": "el abrigo"
+      },
+      "fact": {
+        "en": "A coat keeps you warm.",
+        "es": "El abrigo te mantiene caliente."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "scarf",
+      "category": "clothes",
+      "emoji": "🧣",
+      "image": "images/scarf.png",
+      "text": {
+        "en": "scarf",
+        "es": "la bufanda"
+      },
+      "fact": {
+        "en": "A scarf keeps your neck warm.",
+        "es": "La bufanda te calienta el cuello."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "glove",
+      "category": "clothes",
+      "emoji": "🧤",
+      "image": "images/glove.png",
+      "text": {
+        "en": "glove",
+        "es": "el guante"
+      },
+      "fact": {
+        "en": "Gloves keep your hands warm.",
+        "es": "Los guantes te calientan las manos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "boot",
+      "category": "clothes",
+      "emoji": "👢",
+      "image": "images/boot.png",
+      "text": {
+        "en": "boot",
+        "es": "la bota"
+      },
+      "fact": {
+        "en": "Boots keep your feet dry.",
+        "es": "Las botas mantienen secos tus pies."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cap",
+      "category": "clothes",
+      "emoji": "🧢",
+      "image": "images/cap.png",
+      "text": {
+        "en": "cap",
+        "es": "la gorra"
+      },
+      "fact": {
+        "en": "A cap shades your eyes.",
+        "es": "La gorra te da sombra en los ojos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "pants",
+      "category": "clothes",
+      "emoji": "👖",
+      "image": "images/pants.png",
+      "text": {
+        "en": "pants",
+        "es": "los pantalones"
+      },
+      "fact": {
+        "en": "Pants cover your legs.",
+        "es": "Los pantalones cubren tus piernas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "glasses",
+      "category": "clothes",
+      "emoji": "👓",
+      "image": "images/glasses.png",
+      "text": {
+        "en": "glasses",
+        "es": "los lentes"
+      },
+      "fact": {
+        "en": "Glasses help you see better.",
+        "es": "Los lentes te ayudan a ver mejor."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cup",
+      "category": "home",
+      "emoji": "☕",
+      "image": "images/cup.png",
+      "text": {
+        "en": "cup",
+        "es": "la taza"
+      },
+      "fact": {
+        "en": "You drink from a cup.",
+        "es": "Bebes de una taza."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bed",
+      "category": "home",
+      "emoji": "🛏️",
+      "image": "images/bed.png",
+      "text": {
+        "en": "bed",
+        "es": "la cama"
+      },
+      "fact": {
+        "en": "You sleep in a bed.",
+        "es": "Duermes en una cama."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "chair",
+      "category": "home",
+      "emoji": "🪑",
+      "image": "images/chair.png",
+      "text": {
+        "en": "chair",
+        "es": "la silla"
+      },
+      "fact": {
+        "en": "You sit on a chair.",
+        "es": "Te sientas en una silla."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "door",
+      "category": "home",
+      "emoji": "🚪",
+      "image": "images/door.png",
+      "text": {
+        "en": "door",
+        "es": "la puerta"
+      },
+      "fact": {
+        "en": "You open a door to go in.",
+        "es": "Abres la puerta para entrar."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "key",
+      "category": "home",
+      "emoji": "🔑",
+      "image": "images/key.png",
+      "text": {
+        "en": "key",
+        "es": "la llave"
+      },
+      "fact": {
+        "en": "A key opens a lock.",
+        "es": "La llave abre una cerradura."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "couch",
+      "category": "home",
+      "emoji": "🛋️",
+      "image": "images/couch.png",
+      "text": {
+        "en": "couch",
+        "es": "el sofá"
+      },
+      "fact": {
+        "en": "A couch is a soft seat for many people.",
+        "es": "El sofá es un asiento suave para muchos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "window",
+      "category": "home",
+      "emoji": "🪟",
+      "image": "images/window.png",
+      "text": {
+        "en": "window",
+        "es": "la ventana"
+      },
+      "fact": {
+        "en": "You can look outside through a window.",
+        "es": "Puedes mirar afuera por la ventana."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "clock",
+      "category": "home",
+      "emoji": "⏰",
+      "image": "images/clock.png",
+      "text": {
+        "en": "clock",
+        "es": "el reloj"
+      },
+      "fact": {
+        "en": "A clock tells the time.",
+        "es": "El reloj nos dice la hora."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bath",
+      "category": "home",
+      "emoji": "🛁",
+      "image": "images/bath.png",
+      "text": {
+        "en": "bath",
+        "es": "la tina"
+      },
+      "fact": {
+        "en": "You wash in a bath.",
+        "es": "Te bañas en la tina."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "broom",
+      "category": "home",
+      "emoji": "🧹",
+      "image": "images/broom.png",
+      "text": {
+        "en": "broom",
+        "es": "la escoba"
+      },
+      "fact": {
+        "en": "A broom sweeps the floor.",
+        "es": "La escoba barre el piso."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "spoon",
+      "category": "home",
+      "emoji": "🥄",
+      "image": "images/spoon.png",
+      "text": {
+        "en": "spoon",
+        "es": "la cuchara"
+      },
+      "fact": {
+        "en": "You eat soup with a spoon.",
+        "es": "Comes sopa con una cuchara."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "candle",
+      "category": "home",
+      "emoji": "🕯️",
+      "image": "images/candle.png",
+      "text": {
+        "en": "candle",
+        "es": "la vela"
+      },
+      "fact": {
+        "en": "A candle gives light.",
+        "es": "La vela da luz."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "book",
+      "category": "school",
+      "emoji": "📖",
+      "image": "images/book.png",
+      "text": {
+        "en": "book",
+        "es": "el libro"
+      },
+      "fact": {
+        "en": "A book has many pages.",
+        "es": "El libro tiene muchas páginas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "pencil",
+      "category": "school",
+      "emoji": "✏️",
+      "image": "images/pencil.png",
+      "text": {
+        "en": "pencil",
+        "es": "el lápiz"
+      },
+      "fact": {
+        "en": "You write with a pencil.",
+        "es": "Escribes con un lápiz."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "pen",
+      "category": "school",
+      "emoji": "🖊️",
+      "image": "images/pen.png",
+      "text": {
+        "en": "pen",
+        "es": "la pluma"
+      },
+      "fact": {
+        "en": "A pen writes with ink.",
+        "es": "La pluma escribe con tinta."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bag",
+      "category": "school",
+      "emoji": "🎒",
+      "image": "images/bag.png",
+      "text": {
+        "en": "bag",
+        "es": "la mochila"
+      },
+      "fact": {
+        "en": "You carry books in a bag.",
+        "es": "Llevas tus libros en la mochila."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "scissors",
+      "category": "school",
+      "emoji": "✂️",
+      "image": "images/scissors.png",
+      "text": {
+        "en": "scissors",
+        "es": "las tijeras"
+      },
+      "fact": {
+        "en": "Scissors cut paper.",
+        "es": "Las tijeras cortan papel."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "ruler",
+      "category": "school",
+      "emoji": "📏",
+      "image": "images/ruler.png",
+      "text": {
+        "en": "ruler",
+        "es": "la regla"
+      },
+      "fact": {
+        "en": "A ruler measures how long things are.",
+        "es": "La regla mide qué tan largas son las cosas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "crayon",
+      "category": "school",
+      "emoji": "🖍️",
+      "image": "images/crayon.png",
+      "text": {
+        "en": "crayon",
+        "es": "el crayón"
+      },
+      "fact": {
+        "en": "Crayons come in many colors.",
+        "es": "Los crayones son de muchos colores."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "computer",
+      "category": "school",
+      "emoji": "💻",
+      "image": "images/computer.png",
+      "text": {
+        "en": "computer",
+        "es": "la computadora"
+      },
+      "fact": {
+        "en": "A computer helps us learn.",
+        "es": "La computadora nos ayuda a aprender."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "globe",
+      "category": "school",
+      "emoji": "🌍",
+      "image": "images/globe.png",
+      "text": {
+        "en": "globe",
+        "es": "el globo terráqueo"
+      },
+      "fact": {
+        "en": "A globe is a round map of the Earth.",
+        "es": "El globo terráqueo es un mapa redondo de la Tierra."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "paint",
+      "category": "school",
+      "emoji": "🎨",
+      "image": "images/paint.png",
+      "text": {
+        "en": "paint",
+        "es": "la pintura"
+      },
+      "fact": {
+        "en": "You can paint a picture.",
+        "es": "Puedes pintar un dibujo."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "ball",
+      "category": "play",
+      "emoji": "⚽",
+      "image": "images/ball.png",
+      "text": {
+        "en": "ball",
+        "es": "la pelota"
+      },
+      "fact": {
+        "en": "You can kick or throw a ball.",
+        "es": "Puedes patear o lanzar una pelota."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "kite",
+      "category": "play",
+      "emoji": "🪁",
+      "image": "images/kite.png",
+      "text": {
+        "en": "kite",
+        "es": "el papalote"
+      },
+      "fact": {
+        "en": "A kite flies in the wind.",
+        "es": "El papalote vuela con el viento."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "teddy",
+      "category": "play",
+      "emoji": "🧸",
+      "image": "images/teddy.png",
+      "text": {
+        "en": "teddy",
+        "es": "el osito de peluche"
+      },
+      "fact": {
+        "en": "A teddy bear is soft to hug.",
+        "es": "El osito de peluche es suave para abrazar."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "balloon",
+      "category": "play",
+      "emoji": "🎈",
+      "image": "images/balloon.png",
+      "text": {
+        "en": "balloon",
+        "es": "el globo"
+      },
+      "fact": {
+        "en": "A balloon is full of air.",
+        "es": "El globo está lleno de aire."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "gift",
+      "category": "play",
+      "emoji": "🎁",
+      "image": "images/gift.png",
+      "text": {
+        "en": "gift",
+        "es": "el regalo"
+      },
+      "fact": {
+        "en": "A gift is a surprise for someone.",
+        "es": "El regalo es una sorpresa para alguien."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "puzzle",
+      "category": "play",
+      "emoji": "🧩",
+      "image": "images/puzzle.png",
+      "text": {
+        "en": "puzzle",
+        "es": "el rompecabezas"
+      },
+      "fact": {
+        "en": "You fit puzzle pieces together.",
+        "es": "Juntas las piezas del rompecabezas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "dice",
+      "category": "play",
+      "emoji": "🎲",
+      "image": "images/dice.png",
+      "text": {
+        "en": "dice",
+        "es": "los dados"
+      },
+      "fact": {
+        "en": "Dice have dots on every side.",
+        "es": "Los dados tienen puntos en cada lado."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "robot",
+      "category": "play",
+      "emoji": "🤖",
+      "image": "images/robot.png",
+      "text": {
+        "en": "robot",
+        "es": "el robot"
+      },
+      "fact": {
+        "en": "A robot is a machine.",
+        "es": "El robot es una máquina."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "yoyo",
+      "category": "play",
+      "emoji": "🪀",
+      "image": "images/yoyo.png",
+      "text": {
+        "en": "yo-yo",
+        "es": "el yoyo"
+      },
+      "fact": {
+        "en": "A yo-yo goes up and down.",
+        "es": "El yoyo sube y baja."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "skateboard",
+      "category": "play",
+      "emoji": "🛹",
+      "image": "images/skateboard.png",
+      "text": {
+        "en": "skateboard",
+        "es": "la patineta"
+      },
+      "fact": {
+        "en": "A skateboard has four wheels.",
+        "es": "La patineta tiene cuatro ruedas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "car",
+      "category": "transport",
+      "emoji": "🚗",
+      "image": "images/car.png",
+      "text": {
+        "en": "car",
+        "es": "el carro"
+      },
+      "fact": {
+        "en": "A car drives on the road.",
+        "es": "El carro va por la calle."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bus",
+      "category": "transport",
+      "emoji": "🚌",
+      "image": "images/bus.png",
+      "text": {
+        "en": "bus",
+        "es": "el autobús"
+      },
+      "fact": {
+        "en": "A bus carries many people.",
+        "es": "El autobús lleva a mucha gente."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "train",
+      "category": "transport",
+      "emoji": "🚆",
+      "image": "images/train.png",
+      "text": {
+        "en": "train",
+        "es": "el tren"
+      },
+      "fact": {
+        "en": "A train runs on tracks.",
+        "es": "El tren va sobre las vías."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "plane",
+      "category": "transport",
+      "emoji": "✈️",
+      "image": "images/plane.png",
+      "text": {
+        "en": "plane",
+        "es": "el avión"
+      },
+      "fact": {
+        "en": "A plane flies in the sky.",
+        "es": "El avión vuela en el cielo."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "boat",
+      "category": "transport",
+      "emoji": "⛵",
+      "image": "images/boat.png",
+      "text": {
+        "en": "boat",
+        "es": "el bote"
+      },
+      "fact": {
+        "en": "A boat floats on water.",
+        "es": "El bote flota en el agua."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bike",
+      "category": "transport",
+      "emoji": "🚲",
+      "image": "images/bike.png",
+      "text": {
+        "en": "bike",
+        "es": "la bicicleta"
+      },
+      "fact": {
+        "en": "A bike has two wheels.",
+        "es": "La bicicleta tiene dos ruedas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "truck",
+      "category": "transport",
+      "emoji": "🚚",
+      "image": "images/truck.png",
+      "text": {
+        "en": "truck",
+        "es": "el camión"
+      },
+      "fact": {
+        "en": "A truck carries heavy things.",
+        "es": "El camión lleva cosas pesadas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "ship",
+      "category": "transport",
+      "emoji": "🚢",
+      "image": "images/ship.png",
+      "text": {
+        "en": "ship",
+        "es": "el barco"
+      },
+      "fact": {
+        "en": "A ship sails on the sea.",
+        "es": "El barco navega en el mar."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "rocket",
+      "category": "transport",
+      "emoji": "🚀",
+      "image": "images/rocket.png",
+      "text": {
+        "en": "rocket",
+        "es": "el cohete"
+      },
+      "fact": {
+        "en": "A rocket flies into space.",
+        "es": "El cohete vuela al espacio."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "scooter",
+      "category": "transport",
+      "emoji": "🛴",
+      "image": "images/scooter.png",
+      "text": {
+        "en": "scooter",
+        "es": "el scooter"
+      },
+      "fact": {
+        "en": "You push a scooter with one foot.",
+        "es": "Empujas el scooter con un pie."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "tractor",
+      "category": "transport",
+      "emoji": "🚜",
+      "image": "images/tractor.png",
+      "text": {
+        "en": "tractor",
+        "es": "el tractor"
+      },
+      "fact": {
+        "en": "A tractor works on a farm.",
+        "es": "El tractor trabaja en la granja."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "helicopter",
+      "category": "transport",
+      "emoji": "🚁",
+      "image": "images/helicopter.png",
+      "text": {
+        "en": "helicopter",
+        "es": "el helicóptero"
+      },
+      "fact": {
+        "en": "A helicopter has spinning blades.",
+        "es": "El helicóptero tiene aspas que giran."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "sun",
+      "category": "nature",
+      "emoji": "☀️",
+      "image": "images/sun.png",
+      "text": {
+        "en": "sun",
+        "es": "el sol"
+      },
+      "fact": {
+        "en": "The sun gives us light.",
+        "es": "El sol nos da luz."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "moon",
+      "category": "nature",
+      "emoji": "🌙",
+      "image": "images/moon.png",
+      "text": {
+        "en": "moon",
+        "es": "la luna"
+      },
+      "fact": {
+        "en": "The moon shines at night.",
+        "es": "La luna brilla de noche."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "star",
+      "category": "nature",
+      "emoji": "⭐",
+      "image": "images/star.png",
+      "text": {
+        "en": "star",
+        "es": "la estrella"
+      },
+      "fact": {
+        "en": "Stars twinkle in the night sky.",
+        "es": "Las estrellas brillan en el cielo de noche."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cloud",
+      "category": "nature",
+      "emoji": "☁️",
+      "image": "images/cloud.png",
+      "text": {
+        "en": "cloud",
+        "es": "la nube"
+      },
+      "fact": {
+        "en": "Clouds float in the sky.",
+        "es": "Las nubes flotan en el cielo."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "rain",
+      "category": "nature",
+      "emoji": "🌧️",
+      "image": "images/rain.png",
+      "text": {
+        "en": "rain",
+        "es": "la lluvia"
+      },
+      "fact": {
+        "en": "Rain helps plants grow.",
+        "es": "La lluvia ayuda a crecer a las plantas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "tree",
+      "category": "nature",
+      "emoji": "🌳",
+      "image": "images/tree.png",
+      "text": {
+        "en": "tree",
+        "es": "el árbol"
+      },
+      "fact": {
+        "en": "Trees give us shade.",
+        "es": "Los árboles nos dan sombra."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "flower",
+      "category": "nature",
+      "emoji": "🌸",
+      "image": "images/flower.png",
+      "text": {
+        "en": "flower",
+        "es": "la flor"
+      },
+      "fact": {
+        "en": "Bees visit flowers.",
+        "es": "Las abejas visitan las flores."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "leaf",
+      "category": "nature",
+      "emoji": "🍃",
+      "image": "images/leaf.png",
+      "text": {
+        "en": "leaf",
+        "es": "la hoja"
+      },
+      "fact": {
+        "en": "Most leaves are green.",
+        "es": "Casi todas las hojas son verdes."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "rainbow",
+      "category": "nature",
+      "emoji": "🌈",
+      "image": "images/rainbow.png",
+      "text": {
+        "en": "rainbow",
+        "es": "el arcoíris"
+      },
+      "fact": {
+        "en": "A rainbow has many colors.",
+        "es": "El arcoíris tiene muchos colores."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "snow",
+      "category": "nature",
+      "emoji": "❄️",
+      "image": "images/snow.png",
+      "text": {
+        "en": "snow",
+        "es": "la nieve"
+      },
+      "fact": {
+        "en": "Snow is cold and white.",
+        "es": "La nieve es fría y blanca."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "fire",
+      "category": "nature",
+      "emoji": "🔥",
+      "image": "images/fire.png",
+      "text": {
+        "en": "fire",
+        "es": "el fuego"
+      },
+      "fact": {
+        "en": "Fire is hot. Stay away!",
+        "es": "El fuego quema. ¡Aléjate!"
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "mountain",
+      "category": "nature",
+      "emoji": "⛰️",
+      "image": "images/mountain.png",
+      "text": {
+        "en": "mountain",
+        "es": "la montaña"
+      },
+      "fact": {
+        "en": "A mountain is very high.",
+        "es": "La montaña es muy alta."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "cactus",
+      "category": "nature",
+      "emoji": "🌵",
+      "image": "images/cactus.png",
+      "text": {
+        "en": "cactus",
+        "es": "el cactus"
+      },
+      "fact": {
+        "en": "A cactus grows in the desert.",
+        "es": "El cactus crece en el desierto."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "mushroom",
+      "category": "nature",
+      "emoji": "🍄",
+      "image": "images/mushroom.png",
+      "text": {
+        "en": "mushroom",
+        "es": "el hongo"
+      },
+      "fact": {
+        "en": "Some mushrooms are not safe to eat.",
+        "es": "Algunos hongos no se pueden comer."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "drum",
+      "category": "music",
+      "emoji": "🥁",
+      "image": "images/drum.png",
+      "text": {
+        "en": "drum",
+        "es": "el tambor"
+      },
+      "fact": {
+        "en": "You hit a drum to make a beat.",
+        "es": "Tocas el tambor para hacer ritmo."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "guitar",
+      "category": "music",
+      "emoji": "🎸",
+      "image": "images/guitar.png",
+      "text": {
+        "en": "guitar",
+        "es": "la guitarra"
+      },
+      "fact": {
+        "en": "A guitar has strings.",
+        "es": "La guitarra tiene cuerdas."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "piano",
+      "category": "music",
+      "emoji": "🎹",
+      "image": "images/piano.png",
+      "text": {
+        "en": "piano",
+        "es": "el piano"
+      },
+      "fact": {
+        "en": "A piano has black and white keys.",
+        "es": "El piano tiene teclas blancas y negras."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "trumpet",
+      "category": "music",
+      "emoji": "🎺",
+      "image": "images/trumpet.png",
+      "text": {
+        "en": "trumpet",
+        "es": "la trompeta"
+      },
+      "fact": {
+        "en": "You blow into a trumpet.",
+        "es": "Soplas para tocar la trompeta."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "violin",
+      "category": "music",
+      "emoji": "🎻",
+      "image": "images/violin.png",
+      "text": {
+        "en": "violin",
+        "es": "el violín"
+      },
+      "fact": {
+        "en": "You play a violin with a bow.",
+        "es": "El violín se toca con un arco."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "bell",
+      "category": "music",
+      "emoji": "🔔",
+      "image": "images/bell.png",
+      "text": {
+        "en": "bell",
+        "es": "la campana"
+      },
+      "fact": {
+        "en": "A bell rings.",
+        "es": "La campana suena."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "microphone",
+      "category": "music",
+      "emoji": "🎤",
+      "image": "images/microphone.png",
+      "text": {
+        "en": "microphone",
+        "es": "el micrófono"
+      },
+      "fact": {
+        "en": "A microphone makes your voice loud.",
+        "es": "El micrófono hace tu voz más fuerte."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "radio",
+      "category": "music",
+      "emoji": "📻",
+      "image": "images/radio.png",
+      "text": {
+        "en": "radio",
+        "es": "el radio"
+      },
+      "fact": {
+        "en": "A radio plays music.",
+        "es": "El radio toca música."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    },
+    {
+      "id": "headphones",
+      "category": "music",
+      "emoji": "🎧",
+      "image": "images/headphones.png",
+      "text": {
+        "en": "headphones",
+        "es": "los audífonos"
+      },
+      "fact": {
+        "en": "You listen with headphones.",
+        "es": "Escuchas con los audífonos."
+      },
+      "audio": {
+        "en": null,
+        "es": null
+      }
+    }
+  ]
+}
